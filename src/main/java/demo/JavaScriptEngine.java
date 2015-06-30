@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
-import java.util.function.Function;
+//import java.util.function.Function;
 
 public class JavaScriptEngine {
 
@@ -58,10 +58,10 @@ public class JavaScriptEngine {
         }
     }
 
-    public <T> T invokeFunction(String functionName,
-                                Function<Object, T> converter, Object... args) {
-        return converter.apply(invokeFunction(functionName, args));
-    }
+//    public <T> T invokeFunction(String functionName,
+//                                Function<Object, T> converter, Object... args) {
+//        return converter.apply(invokeFunction(functionName, args));
+//    }
 
     private String readFromClassPath(String path) {
         try (InputStream in = getClass().getClassLoader().getResourceAsStream(
